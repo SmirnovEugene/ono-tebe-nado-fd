@@ -1,1 +1,27 @@
 /* место для вашего кода */
+.header {
+  height: 293px;
+  padding: 0 50px;
+  background-color: bisque;
+}
+.cover {
+  height: 757px;
+  background: url("../images/cover.jpg") center / cover;
+}
+.lots {
+  height: 723px;
+  margin-top: 180px;
+  padding: 0 24px;
+  background-color: blue;
+}
+.about {
+  height: 595px;
+  margin-top: 120px;
+  padding: 0 24px;
+  background-color: brown;
+}
+.footer {
+  height: 180px;
+  margin-top: 180px;
+  background-color: chocolate;
+}
