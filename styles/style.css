@@ -1,21 +1,27 @@
 /* место для вашего кода */
+
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   height: 293px;
   padding: 92px 50px 102px;
+  color: var(--text-color__secondary);
 }
+
 .header__links-list {
   display: flex;
   gap: 33px;
 }
+
 .header__links-list-item {
   list-style: circle;
 }
+
 .header__links-list-item_no-bullit {
   list-style: none;
 }
+
 .header__link,
 .header__address {
   font-weight: 400;
@@ -24,13 +30,16 @@
   line-height: 24px;
   text-underline-offset: 3px;
 }
+
 .header__link_active {
   text-decoration: none;
 }
+
 .header__logo {
   display: block;
   width: 137px;
 }
+
 .header__address {
   display: flex;
   flex-direction: column;
@@ -38,76 +47,101 @@
   align-items: flex-start;
   max-width: 240px;
 }
-.cover {
-  padding: 165px 50px 50px;
-  color: #fff;
-  position: relative;
-  min-height: 757px;
-  background: url("../images/cover.jpg") center / cover;
-  z-index: -2;
-}
-.cover__title {
-  text-transform: uppercase;
 
+.cover {
+  position: relative;
+  z-index: -2;
+  min-height: 757px;
+  padding: 165px 50px 50px;
+  color: var(--text-color__primary);
+  background: url("../images/cover.jpg") center / cover;
+}
+
+.cover__title {
   font-weight: 700;
   font-size: 100px;
   line-height: 115px;
   letter-spacing: 31px;
+  text-transform: uppercase;
 }
+
 .cover__title > span + span {
   padding-top: 20px;
 }
+
 .cover__title > span.aligned-text_center {
   padding-left: 33px;
 }
+
 .cover__title > span.aligned-text_right > span {
   letter-spacing: 0;
 }
+
 .description {
   display: flex;
   justify-content: space-between;
-  padding-top: 116px;
+  align-items: center;
+  padding-top: 106px;
 }
+
 .cover__description-text {
   font-weight: 400;
   font-size: 22px;
-  line-height: 28px;
+  line-height: 30px;
+  text-transform: uppercase;
+  word-spacing: 19px;
 }
+
 .bet-button {
+  padding: 11px 31px;
+  color: var(--text-color__primary);
+  font-weight: 500;
+  font-size: 22px;
+  border: 1px solid var(--text-color__primary);
+  text-transform: uppercase;
+  background-color: transparent;
 }
+
 .lots {
   height: 723px;
   margin-top: 180px;
   padding: 0 24px;
   background-color: blue;
 }
+
 .about {
   height: 595px;
   margin-top: 120px;
   padding: 0 24px;
   background-color: brown;
 }
+
 .footer {
   height: 180px;
   margin-top: 180px;
   background-color: chocolate;
 }
+
 .aligned-text {
   display: block;
 }
+
 .aligned-text_left {
   text-align: left;
 }
+
 .aligned-text_center {
   text-align: center;
 }
+
 .aligned-text_right {
   text-align: right;
 }
+
 .overlay {
   position: absolute;
   inset: 0;
+  z-index: -1;
   opacity: 0.6;
   background-color: #000;
-  z-index: -1;
 }
