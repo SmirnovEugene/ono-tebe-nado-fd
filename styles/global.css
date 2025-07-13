@@ -5,9 +5,8 @@
 }
 
 body {
---text-color__primary: #fff;
---text-color__secondary: #000;
-;
+  --text-color__primary: #fff;
+  --text-color__secondary: #000;
   width: 1100px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;

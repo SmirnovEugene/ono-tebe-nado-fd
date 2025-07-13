@@ -5,7 +5,7 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   height: 293px;
-  padding: 92px 50px 102px;
+  padding: 91px 50px 102px;
   color: var(--text-color__secondary);
 }
 
@@ -16,10 +16,6 @@
 
 .header__links-list-item {
   list-style: circle;
-}
-
-.header__links-list-item_no-bullit {
-  list-style: none;
 }
 
 .header__link,
@@ -49,8 +45,6 @@
 }
 
 .cover {
-  position: relative;
-  z-index: -2;
   min-height: 757px;
   padding: 165px 50px 50px;
   color: var(--text-color__primary);
@@ -93,33 +87,82 @@
 }
 
 .bet-button {
+  border: 1px solid var(--text-color__primary);
   padding: 11px 31px;
   color: var(--text-color__primary);
   font-weight: 500;
   font-size: 22px;
-  border: 1px solid var(--text-color__primary);
   text-transform: uppercase;
   background-color: transparent;
 }
 
 .lots {
-  height: 723px;
-  margin-top: 180px;
+  min-height: 723px;
   padding: 0 24px;
-  background-color: blue;
+}
+.lots__heading {
+  color: var(--text-color__secondary);
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 27px 0 30px;
+}
+
+.lots__card-list-item {
+  width: 334px;
+  min-height: 596px;
+}
+
+.card-link {
+  height: 100%;
+  text-decoration: none;
+}
+
+.card {
+  height: 100%;
+  color: var(--text-color__primary);
+  background: center / cover;
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+.lots__look-more-link {
+  color: var(--text-color__secondary);
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 40px;
+  text-underline-offset: 5px;
 }
 
 .about {
   height: 595px;
-  margin-top: 120px;
   padding: 0 24px;
   background-color: brown;
 }
 
 .footer {
   height: 180px;
-  margin-top: 180px;
   background-color: chocolate;
+}
+
+.links-list-item_no-bullit {
+  list-style: none;
 }
 
 .aligned-text {
@@ -141,7 +184,29 @@
 .overlay {
   position: absolute;
   inset: 0;
-  z-index: -1;
   opacity: 0.6;
   background-color: #000;
+}
+
+:has(.overlay) {
+  position: relative;
+}
+
+.overlay ~ * {
+  position: relative;
+  z-index: 2;
+}
+.margin-botton-120 {
+  margin-bottom: 120px;
+}
+
+.margin-botton-180 {
+  margin-bottom: 180px;
+}
+
+.card {
+  /* min-height: 757px;
+  padding: 165px 50px 50px;
+  c
+  background: url("../images/cover.jpg") center / cover; */
 }
